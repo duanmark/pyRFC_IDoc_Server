@@ -1,0 +1,16 @@
+
+**** Log file opened at 2024-03-05 14:33:19.661469 UTC+02:00 (South Africa Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 10, Compiled on Jun 11 2022 06:51:55
+ CPIC library: 753.2021.05.10 version 3, NI library: 40, Kernel Release: 753 Patch Level 1021
+ Current working directory: C:\Users\duanm\OneDrive\Documents\Python\pyRFC_IDoc_Server, Program: python
+ Hardware: PC with Windows NT 8x AMD64 Level 6 (Mod 142 Step 12), Operating_system: Windows NT 10.0
+ Hostname: MSI, IP address: 10.254.228.40, IPv6 address: fe80::3abf:6da6:e3ac:8ca
+
+2024-03-05 14:33:19.661677 [22576] >> Info entry
+	Did find config file C:\Users\duanm\OneDrive\Documents\Python\pyRFC_IDoc_Server\sapnwrfc.ini.
+2024-03-05 14:34:05.617407 [02016] >> Error entry
+	[Handle: 2883087971872	ConvID: 46016608	Target: vhcala4hci	SysID: A4H	SysNr: 00	User: DEVELOPER	type: 4	regCount: 1	type: 4	stateful Connections: 0	GwHost: localhost	GwServ: sapgw00		ProgrammID: DNM	Codepage: 4103]
+	RfcSystemException: Key: RFC_ABAP_RUNTIME_FAILURE, Code: RFC_ABAP_RUNTIME_FAILURE, Message: Application's transaction state database currently unavailable.
+2024-03-05 14:34:05.658227 [02016] >> Error entry
+	[Handle: 2883087971872	ConvID: 46017620	Target: vhcala4hci	SysID: A4H	SysNr: 00	User: DEVELOPER	type: 4	regCount: 1	type: 4	stateful Connections: 0	GwHost: localhost	GwServ: sapgw00		ProgrammID: DNM	Codepage: 4103]
+	RfcSystemException: Key: RFC_ABAP_RUNTIME_FAILURE, Code: RFC_ABAP_RUNTIME_FAILURE, Message: Application's transaction state database currently unavailable.
