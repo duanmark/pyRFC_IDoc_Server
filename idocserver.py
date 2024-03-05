@@ -23,22 +23,22 @@ def onRollbackTransaction(rfcHandle, tid):
     print(rfchandle, tid)
     return RCStatus.OK
 
-# create server
+#Create server
 server = Server(server_params={'dest':'gateway'}, client_params={'dest':'server'},config={'debug': True} )
 
-#Python function used to send IDocs via tRFC/qRFC
+#ABAP function used to send IDocs via tRFC/qRFC
 server.add_function("IDOC_INBOUND_ASYNCHRONOUS", handle_idoc_inbound_asynchronous)
 
-#register the RFC transaction handlers.
+#Register the RFC transaction handlers.
 server.transaction_rfc_init(sysId ='A4H', transactionHandler={ "check": onCheckTransaction,
                                                                 "commit": onCommitTransaction,
                                                                 "rollback": onRollbackTransaction,
                                                                 "confirm": onConfirmTransaction
                                                                 })
-#start server
+#Start server
 server.start()
 
-#get server attributes
+#Get server attributes
 print(server.get_server_attributes())
 
 #Check transaction handlers
@@ -47,5 +47,5 @@ print(server.transaction_handlers_count)
 
 input("Press Enter to stop server...")
 
-# shutdown server
+#Shutdown server
 server.close()
